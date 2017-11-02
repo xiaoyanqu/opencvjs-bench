@@ -3,12 +3,14 @@ var cv = require("./opencv.js")
 
 var core_kernels = require("./perf_core.js");
 var imgproc_kernels = require("./perf_imgproc.js");
+var objdect_kernels = require("./perf_objdect.js");
 var common = require("./common.js");
 
 // Preparing the list of perf tests
 var kernels = {};
 Object.assign(kernels, core_kernels);
 Object.assign(kernels, imgproc_kernels);
+Object.assign(kernels, objdect_kernels);
 
 (function() {
 
